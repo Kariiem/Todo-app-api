@@ -16,3 +16,10 @@ Ready to run in production? Please [check our deployment guides](https://hexdocs
 * Docs: https://hexdocs.pm/phoenix
 * Forum: https://elixirforum.com/c/phoenix-forum
 * Source: https://github.com/phoenixframework/phoenix
+
+## Implemented endpoints
+- [x] `POST /api/todos`       -> todo_controller:create
+- [x] `GET /api/todos`        -> todo_contoller:index
+- [x] `GET /api/todos/:id`    -> todo_contoller:show
+- [x] `PUT /api/todos/:id`    -> todo_contoller:edit
+- [x] `DELETE /api/todos/:id` -> todo_contoller:delete

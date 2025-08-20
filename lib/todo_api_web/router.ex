@@ -7,7 +7,11 @@ defmodule TodoApiWeb.Router do
 
   scope "/api", TodoApiWeb do
     pipe_through :api
-    resources "/todos", TodoController
+    post   "/todos",     TodoController, :create
+    get    "/todos",     TodoController, :index
+    get    "/todos/:id", TodoController, :show
+    put    "/todos/:id", TodoController, :edit
+    delete "/todos/:id", TodoController, :delete
   end
 
   # Enable LiveDashboard and Swoosh mailbox preview in development
