@@ -1,10 +1,4 @@
-defmodule TodoApi.Repo.Migrations.Todos do
-  use Ecto.Migration
-
-  def change do
-
-  end
-end
+# Module is duplicated :(
 
 defmodule TodoApi.Repo.Migrations.Todos do
   use Ecto.Migration

@@ -1,4 +1,5 @@
 defmodule TodoApi.ChangesetJSON do
+  # Why TodoApi.ChangesetJSON and not TodoApiWeb.ChangesetJSON?
   def error(%{changeset: changeset}) do
     %{errors: Ecto.Changeset.traverse_errors(changeset, fn {msg, opts} ->
          Regex.replace(~r"%{(\w+)}", msg, fn _, key ->
